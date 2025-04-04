@@ -216,3 +216,68 @@ body {
 .login-content button:hover {
   background: #4a0d8a;
 }
+/* Section Styling Enhancements */
+section {
+  padding: 60px 20px;
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.business-model:nth-of-type(2) {
+  background-color: #f4faff;
+}
+
+.mission:nth-of-type(2) {
+  background-color: #fff8f0;
+}
+
+.business-model:nth-of-type(3) {
+  background-color: #f9f9f9;
+}
+
+.model-grid, .management-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.model-item, .level {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 300px;
+  text-align: center;
+}
+
+.model-item:hover, .level:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+/* Animated card entrance */
+.animated-card {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
